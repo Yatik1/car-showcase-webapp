@@ -47,13 +47,7 @@ const SearchManufacturer = ({manufacturer , setManufacturer} : SearchManufacture
                    afterLeave={()=> setQuery('')}
                    > 
                       <Combobox.Options>
-                            {filteredManufacturers.length === 0 && query !== "" ? (
-                                <Combobox.Option 
-                                     value={query}
-                                     className='search-manufacturer__option'>
-                                        "{query} not found"
-                                </Combobox.Option>
-                            ) : (
+                             {
                                 filteredManufacturers.map((item) => (
                                     <Combobox.Option 
                                          key={item}
@@ -63,7 +57,7 @@ const SearchManufacturer = ({manufacturer , setManufacturer} : SearchManufacture
                                             {item}                                   
                                     </Combobox.Option>
                                 ))
-                            )}
+                            }
                       </Combobox.Options>
                  </Transition>
             </div>
