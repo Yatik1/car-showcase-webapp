@@ -20,7 +20,7 @@ const SearchManufacturer = ({manufacturer , setManufacturer} : SearchManufacture
                        ))
 
     return (
-    <div className="search-manufacturer">
+    <div className='search-manufacturer'>
         <Combobox>
             <div className="relative w-full">
                 <Combobox.Button className="absolute top-[14px]">
@@ -33,7 +33,7 @@ const SearchManufacturer = ({manufacturer , setManufacturer} : SearchManufacture
                 </Combobox.Button>
 
                 <Combobox.Input 
-                   className="search-manufacturer__input"
+                   className='search-manufacturer__input'
                    placeholder="Volkswagen"
                    displayValue={(manufacturer:string)=> manufacturer}
                    onChange={(e) => setQuery(e.target.value)}
