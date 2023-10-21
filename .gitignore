@@ -36,6 +36,4 @@ next-env.d.ts
 
 
 .env
-.next.config.js
 
-tsconfig.json
